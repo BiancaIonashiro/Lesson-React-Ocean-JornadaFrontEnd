@@ -19,12 +19,19 @@ function App() {
     image: "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
   };
 
+  const itens = [item1, item2, item3, item4];
+
   return (
     <>
-      <Card item={item1} />
-      <Card item={item2} />
-      <Card item={item3} />
-      <Card item={item4} />
+      <div className="cards">
+        {/* <Card item={item1} />
+        <Card item={item2} />
+        <Card item={item3} />
+        <Card item={item4} /> */}
+        {itens.map((item) => (
+          <Card item={item} />
+        ))}
+      </div>
     </>
   );
 }
