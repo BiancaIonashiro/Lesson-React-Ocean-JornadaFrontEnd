@@ -5,8 +5,8 @@ function Card(props) {
 
   return (
     <>
-      <div className="card">
-        <div className="container">
+      <div className="cards">
+        <div className="card">
           <h2>{item.name}</h2>
           <h5>Status: Vivo</h5>
           <h5>Espécie: Humana</h5>
